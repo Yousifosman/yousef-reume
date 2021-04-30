@@ -1,0 +1,25 @@
+{
+  "myName" : "Yosif Osman",
+  "social_Media" : [
+    {
+      "acount" : "facebook",
+      "link" : "#"
+    },
+    {
+      "acount" : "twitter",
+      "link" : "#"
+    },
+    {
+      "acount" : "instagram",
+      "link" : "#"
+    },
+    {
+      "acount" : "youtube",
+      "link" : "#"
+    },
+    {
+      "acount" : "envelope-o",
+      "link" : "#"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+@import './glopal';
+
+.education_experience {
+  display: flex;
+  margin-bottom: 50px;
+  @include phone {  
+    display: block
+  };
+  section {
+    flex: 1 1 0%;
+    .contBox {
+      padding: 25px 20px 20px 20px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        border-right: 1px solid #dacece94;
+        top: 24px;
+        bottom: 0;
+        left: 9px;
+      }
+      &:last-child {
+        padding: 25px 20px 0px 20px;
+      }
+      .date {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #ffffff4d;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        padding: 0px 10px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        span {
+          display: inline;
+        }
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+// skils 
+.skils {
+  border: 1px solid #fffcfc8a;
+  background: #e6dddd33;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  .overlay {
+    background: #00000052;
+    border-radius: 10px;
+    padding: 10px;
+
+    .Languages {
+      margin-top: 30px;
+    }
+
+    // 
+    .mainSkilsBox {
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      @include phone {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+      }
+      
+      .skilBox {
+        padding: 10px;
+        .text {
+          display: flex;
+          .sikl {
+            width: 100%;
+            color: white;
+          }
+          .percentage {
+            width: 50px;
+            direction: rtl;
+            font-weight: 600;
+            color: white;
+            font-size: 12px;
+            display: flex;
+            align-items: flex-end;
+          }
+        }
+        .label {
+          position: relative;
+          width: 100%;
+          background: #0000008a;
+          .inner {
+            background: #f7ff76;
+            width: 82%;
+            height: 3px;
+            left: 0px;
+            border-color: #e2e871;
+            box-shadow: 0 0 3px 1px #e2e871;
+          }
+        }
+      }
+    }
+  }
+}
+
+// contact
+
+.contact {
+  .title {
+    text-align: center;
+  }
+  .massForm {
+    section {
+      input, textarea {
+        margin: 5px 0px;
+        transition: 0.5s;
+      }
+      input[type="submit"]{
+        margin: 10px auto;
+      }
+    }
+  }
+}
