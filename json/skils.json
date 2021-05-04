@@ -1,0 +1,28 @@
+{
+    "skils" : [
+        {
+            "skilName" : "work under pressure",
+            "rate" : "90"
+        },
+        {
+            "skilName" : "Tact and well-behaved",
+            "rate" : "100"
+        },
+        {
+            "skilName" : "Working in a team",
+            "rate" : "90"
+        },
+        {
+            "skilName" : "Quick learning",
+            "rate" : "80"
+        },
+        {
+            "skilName" : "Browsing and searching online",
+            "rate" : "70"
+        },
+        {
+            "skilName" : "Databases using Access",
+            "rate" : "60"
+        }
+    ]
+}

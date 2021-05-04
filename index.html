@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./style/font-awesome.min.css">
   <link rel="stylesheet" href="./style/normalize.css">
   <link rel="stylesheet" href="./style/main.css">
-  <link rel="stylesheet" href="./style/main-sections.css">
+  <link rel="stylesheet" href="./style/sass/main.css">
 </head>
 <!-- 
   = 
@@ -21,17 +21,12 @@
 
     <!-- Header -->
       <header id="header">
-        <span class="avatar"><img src="img/avatar.jpg" alt="" /></span>
-        <h1>Hi.. I'm  <strong id="headerName"></strong> </h1>
-        <h1>a responsive site template designed by
-        and released for free under the Creative Commons License.</h1>
-        <ul id="social_Media" class="icons">
-          <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-          <li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-          <li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
-          <li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
-        </ul>
+        <span id="avatar" class="avatar">
+          <!-- dynamic Data -->
+        </span>
+        <h1>Hi.. I'm  <strong id="headerName"><!-- dynamic Data --></strong> </h1>
+        <h1 id="welcome"> <!-- dynamic Data --> </h1>
+        <ul id="social_Media" class="icons"> <!-- dynamic Data --> </ul>
       </header>
 
       <!-- Main -->
@@ -41,113 +36,39 @@
         <section class="education_experience">
           
           <!-- education -->
-          <section class="education">
-            <span class="title">My <strong>Education</strong></span>
-
-            <div class="contBox">
-              <div class="date">
-                <span class="start">20/20/2010</span> - <span class="end">20/20/2014</span>
-              </div>
-              <span class="unversity">the name of the University</span>
-              <span class="feld">Name of university degree or specialization</span>
-            </div>
-            <div class="contBox">
-              <div class="date">
-                <span class="start">20/20/2010</span> - <span class="end">20/20/2014</span>
-              </div>
-              <span class="unversity">the name of the University</span>
-              <span class="feld">Name of university degree or specialization</span>
-            </div>
-            <div class="contBox">
-              <div class="date">
-                <span class="start">20/20/2010</span> - <span class="end">20/20/2014</span>
-              </div>
-              <span class="unversity">the name of the University</span>
-              <span class="feld">Name of university degree or specialization</span>
-            </div>
-
+          <section id="education" class="education">
+            <!-- dynamic Data -->
           </section>
 
           <!-- experience -->
-          <section class="experience">
-            <span class="title">My <strong>Experience</strong></span>
-
-            <div class="contBox">
-              <div class="date">
-                <span class="start">20/20/2010</span> - <span class="end">20/20/2014</span>
-              </div>
-              <span class="unversity">the name of the University</span>
-              <span class="feld">Name of university degree or specialization</span>
-            </div>
-            <div class="contBox">
-              <div class="date">
-                <span class="start">20/20/2010</span> - <span class="end">20/20/2014</span>
-              </div>
-              <span class="unversity">the name of the University</span>
-              <span class="feld">Name of university degree or specialization</span>
-            </div>
-            <div class="contBox">
-              <div class="date">
-                <span class="start">20/20/2010</span> - <span class="end">20/20/2014</span>
-              </div>
-              <span class="unversity">the name of the University</span>
-              <span class="feld">Name of university degree or specialization</span>
-            </div>
+          <section id="experience" class="experience">
+            <!-- dynamic Data -->
           </section>
         
+        </section>
+
+        <!-- about -->
+        <section class="about">
+          <div class="mianimage">
+            <div id="bigIamge" class="imgBorder"><img src="./img/osama.jpg" alt=""></div>
+          </div>
+          <div id="aboutBox" class="aboutBox">
+            <!-- dynamic Data -->
+          </div>
         </section>
 
         <!-- slils -->
         <section class="skils">
           <div class="overlay">
-            <div class="personalSklis">
+            <divn id="mySlkis" class="personalSklis">
               <span class="title">My <strong>Skils</strong>
                 <br />
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
               </span>
               <div id="SkilsBox" class="mainSkilsBox">
-                
-                <div class="skilBox">
-                  <div class="text">
-                    <span class="sikl">work under pressure</span>
-                    <span class="percentage">90%</span>
-                  </div>
-                  <div class="label">
-                    <div class="inner"></div>
-                  </div>
-                </div>
-                <div class="skilBox">
-                  <div class="text">
-                    <span class="sikl">work under pressure</span>
-                    <span class="percentage">90%</span>
-                  </div>
-                  <div class="label">
-                    <div class="inner"></div>
-                  </div>
-                </div>
-  
-                <div class="skilBox">
-                  <div class="text">
-                    <span class="sikl">work under pressure</span>
-                    <span class="percentage">90%</span>
-                  </div>
-                  <div class="label">
-                    <div class="inner"></div>
-                  </div>
-                </div>
-  
-                <div class="skilBox">
-                  <div class="text">
-                    <span class="sikl">work under pressure</span>
-                    <span class="percentage">90%</span>
-                  </div>
-                  <div class="label">
-                    <div class="inner"></div>
-                  </div>
-                </div>
-              
+                <!-- dynamic Data -->
               </div>
-            </div>
+            </divn>
             
             <!-- Languages -->
             <div class="Languages">
@@ -155,27 +76,8 @@
                 <br />
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
               </span>
-              <div id="SkilsBox" class="mainSkilsBox">
-                
-                <div class="skilBox">
-                  <div class="text">
-                    <span class="sikl">Arabic</span>
-                    <span class="percentage">100%</span>
-                  </div>
-                  <div class="label">
-                    <div class="inner"></div>
-                  </div>
-                </div>
-                <div class="skilBox">
-                  <div class="text">
-                    <span class="sikl">English</span>
-                    <span class="percentage">90%</span>
-                  </div>
-                  <div class="label">
-                    <div class="inner"></div>
-                  </div>
-                </div>
-  
+              <div id="langBox" class="mainSkilsBox">
+                <!-- dynamic Data -->
               </div>
             </div>
          
@@ -184,7 +86,8 @@
         </section>
 
         <!-- Thumbnails --> 
-        <section id="" class="thumbnails">
+        <section id="thumbnails" class="thumbnails">
+          
           <div>
             <a href="img/fulls/01.jpg">
               <img src="img/thumbs/01.jpg" alt="" />
@@ -195,6 +98,7 @@
               <h3>Lorem ipsum dolor sit amet</h3>
             </a>
           </div>
+
           <div>
             <a href="img/fulls/03.jpg">
               <img src="img/thumbs/03.jpg" alt="" />
@@ -224,7 +128,7 @@
 
       <!-- contact -->
       <section class="contact">
-        <span class="title">Contact <strong>with ME</strong>
+        <span class="title">Contact <strong>With ME</strong>
           <br />
           <span>It's my pleasure to communicate with you</span>
         </span>
@@ -246,13 +150,11 @@
 
   </div>
 
-
   <!-- scrips -->
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.poptrox.min.js"></script>
   <script src="js/progresscircle.js"></script>
   <script src="js/skel.min.js"></script>
   <script src="js/main.js"></script>
-
 </body>
 </html>

@@ -1,5 +1,18 @@
 @import './glopal';
 
+// vertical رأسي
+.centerItems-y {
+  display: flex;
+  justify-content: center;
+}
+ 
+// Horizontal افقي
+.centerItems-x {
+  display: flex;
+  align-items: center;
+}
+
+
 .education_experience {
   display: flex;
   margin-bottom: 50px;
@@ -92,7 +105,7 @@
           background: #0000008a;
           .inner {
             background: #f7ff76;
-            width: 82%;
+            // width: 100%; this will be dinamic frome = main.js lin [122]
             height: 3px;
             left: 0px;
             border-color: #e2e871;
@@ -104,8 +117,44 @@
   }
 }
 
-// contact
+// about
+.about {
+  display: flex;
+  margin: 4em  0em ;
+  @include tablet {
+    display: block;
+    .mianimage {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .mianimage, .aboutBox {
+    flex: 1 1 0%;
+  }
+  .mianimage {
+    .imgBorder {
+      padding: 15px;
+      background: #ffffff29;
+      border: 1px solid;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    } 
+  }
+  .aboutBox {
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    @include tablet {
+      padding: 30px 0px;
+      text-align: center;
+    }
+  }
+}
 
+// contact
 .contact {
   .title {
     text-align: center;

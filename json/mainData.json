@@ -1,5 +1,16 @@
 {
   "myName" : "Yosif Osman",
+  "avatar": "me.jpg",
+  "mainImage":"yousif.jpg",
+  "Welcome_Sentence" : "a responsive site template designed by and released for free under the Creative Commons License.",
+  "mian_About":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi veniam minus eos dolore alias, impedit exercitationem porro, voluptatum, nihil cum corporis dignissimos repudiandae fuga dicta inventore. Fugiat unde pariatur deserunt.",
+  "sss":"",
+  "ddd":"",
+  "fff":"",
+  "ggg":"",
+  "hhh":"",
+  "jjj":"",
+  "kkk":"",
   "social_Media" : [
     {
       "acount" : "facebook",
@@ -20,6 +31,17 @@
     {
       "acount" : "envelope-o",
       "link" : "#"
+    }
+  ],
+  
+  "languages": [
+    {
+      "languageName" : "Arabic",
+      "rate" : "Mother tongue"
+    },
+    {
+      "languageName" : "English",
+      "rate" : 60
     }
   ]
 }

@@ -1,0 +1,46 @@
+{
+    "education": [
+        {
+            "University": "1 - the name of the University",
+            "fald" : "Name of university degree or specialization",
+            "degree" : null ,
+            "startDate" : "20/20/2010",
+            "endDate" : "20/20/2014"
+        },
+        {
+            "University": "2 - the name of the University",
+            "fald" : "Name of university degree or specialization",
+            "degree" : null ,
+            "startDate" : "20/20/2010",
+            "endDate" : "20/20/2014"
+        },
+        {
+            "University": "3 - the name of the University",
+            "fald" : "Name of university degree or specialization",
+            "degree" : null ,
+            "startDate" : "20/20/2010",
+            "endDate" : "20/20/2014"
+        }
+    ],
+
+    "experience" : [
+        {
+            "jopType": "Job title or job name",
+            "jopPlaece" : "The place you were working at",
+            "startDate" : "20/20/2010",
+            "endDate" : "20/20/2014"
+        },
+        {
+            "jopType": "Job title or job name",
+            "jopPlaece" : "The place you were working at",
+            "startDate" : "20/20/2010",
+            "endDate" : "20/20/2014"
+        },
+        {
+            "jopType": "Job title or job name",
+            "jopPlaece" : "The place you were working at",
+            "startDate" : "20/20/2010",
+            "endDate" : "20/20/2014"
+        }
+    ]
+}
