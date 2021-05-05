@@ -19,6 +19,11 @@
   @include phone {  
     display: block
   };
+  .experience {
+    @include phone {
+      margin-top: 50px;
+    }
+  };
   section {
     flex: 1 1 0%;
     .contBox {

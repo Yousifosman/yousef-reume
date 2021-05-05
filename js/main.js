@@ -60,34 +60,32 @@ mainData.onload = function name() {
 	
 	// The main image on top
 	document.getElementById("avatar").innerHTML = `<img src="img/${myData.avatar}" alt="${myData.myName} profile image" />`
-
 	// The big image on about section
 	document.getElementById("bigIamge").innerHTML = `<img src="img/${myData.mainImage}" alt="${myData.myName} profile image" />`
-
 	// bring the main Name on header section.
 	document.getElementById("welcome").innerText = myData.Welcome_Sentence;
-	
 	// A welcome sentence
 	document.getElementById("headerName").innerHTML = myData.myName;
-
 	// About Section
-	document.getElementById("aboutBox").innerHTML = `<span> <span class="title">${myData.myName}</span>${myData.mian_About}
-		<br />
-		<a href="img/pdf/myCV.pdf"><button class="btn"><i class="fa fa-download"></i> Download my CV</button></a>
-	</span>`
-
+	document.getElementById("aboutBox").innerHTML = `
+	<span> 
+		<span class="title">${myData.myName}</span> ${myData.mian_About} <br /> 
+		<a href="img/pdf/${myData.myCV}"><button class="btn"><i class="fa fa-download"></i> Download my CV</button></a>
+	</span>`;
 	// loop throu the Social media
 	document.getElementById("social_Media").innerHTML = myData.social_Media.map(loopsocial).join('')
-	
 	// loop throu The languages
 	document.getElementById("langBox").innerHTML = myData.languages.map(langStruct).join('')
 };
 mainData.send();
 
+function downloadButton() {
+	return ``
+}
+
 // 
 const edu_xper  = new XMLHttpRequest()
 edu_xper.open('GET', 'json/edu_exper.json');
-
 // lading the data.
 edu_xper.onload = function() {
 	const theData = JSON.parse(edu_xper.responseText);
@@ -95,13 +93,30 @@ edu_xper.onload = function() {
 	// education
 	document.getElementById("education").innerHTML = 
 	'<span class="title">My <strong>Education</strong></span>' + theData.education.map(eduStruct).join('')
-
 	// experience
 	document.getElementById("experience").innerHTML = 
 	'<span class="title">My <strong>Education</strong></span>' + theData.experience.map(experStruct).join('')
-
 }
 edu_xper.send();
+
+// thumbnails
+const thumbnails  = new XMLHttpRequest()
+thumbnails.open('GET', 'json/thumbnails.json');
+// thumbnails
+thumbnails.onload = function() {
+	const thumbData = JSON.parse(thumbnails.responseText);
+	
+	document.getElementById("thumbnails").innerHTML = `
+	<div id="thCol_1"> ${thumbData.col_1.map(colStruct).join('')} </div>
+	`  + `
+	<div id="thCol_1"> ${thumbData.col_2.map(colStruct).join('')} </div>
+	`  + `
+	<div id="thCol_1"> ${thumbData.col_3.map(colStruct).join('')} </div>
+	`  + `
+	<div id="thCol_1"> ${thumbData.col_4.map(colStruct).join('')} </div>
+	`
+}; thumbnails.send();
+
 
 // Skils
 const skils  = new XMLHttpRequest()
@@ -110,12 +125,9 @@ skils.open('GET', 'json/skils.json');
 // lading the data.
 skils.onload = function() {
 	const skilsData = JSON.parse(skils.responseText);
-
 	// education
 	document.getElementById("SkilsBox").innerHTML = skilsData.skils.map(skilsStruct).join('')
-
-}
-skils.send();
+}; skils.send();
 
 /*
 	=================================================================
@@ -125,14 +137,10 @@ skils.send();
 
 // social icons.
 function loopsocial(social) {
-	return `
-	<li>
-		<a href="${social.link}" class="icon style2 fa-${social.acount}"></a>
-	</li>
-	`
+	return `<li><a href="${social.link}" class="icon style2 fa-${social.acount}"></a></li>`
 };
 
-// languages
+// languages struccher
 function langStruct(data) {
 	return `
 	<div class="skilBox">
@@ -145,7 +153,7 @@ function langStruct(data) {
 	`
 }
 
-// education
+// education struccher
 function eduStruct(data) {
 	return `
 	<div class="contBox">
@@ -158,7 +166,7 @@ function eduStruct(data) {
 	`
 };
 
-// education
+// education struccher
 function experStruct(data) {
 	return `
 	<div class="contBox">
@@ -171,7 +179,7 @@ function experStruct(data) {
 	`
 };
 
-// Skils
+// Skils struccher
 function skilsStruct(data) {
 	return `
 	<div class="skilBox">
@@ -181,5 +189,15 @@ function skilsStruct(data) {
 		</div>
 		<div class="label"><div style="width: ${data.rate}%;" class="inner"></div></div>
 	</div>
+	`
+}
+
+// thumbnails columes struccher
+function colStruct(data) {
+	return `
+	<a href="img/fulls/${data.imageLink}">
+		<img src="img/thumbs/${data.imageLink}" alt="" />
+		<h3>${data.description}</h3>
+	</a>
 	`
 }

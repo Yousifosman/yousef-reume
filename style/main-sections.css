@@ -1,6 +1,6 @@
 body {
   background-color: #000;
-  background-image: url("../img/bg.jpg");
+  background-image: url("../../img/bg.jpg");
   background-size: cover;
   background-position: top center;
 }
@@ -20,6 +20,42 @@ body {
   color: #ffffffa6;
 }
 
+.centerItems-y {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.centerItems-x {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.centerItems-y {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.centerItems-x {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .education_experience {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,6 +66,12 @@ body {
 @media (max-width: 676px) {
   .education_experience {
     display: block;
+  }
+}
+
+@media (max-width: 676px) {
+  .education_experience .experience {
+    margin-top: 50px;
   }
 }
 
@@ -147,12 +189,67 @@ body {
 
 .skils .overlay .mainSkilsBox .skilBox .label .inner {
   background: #f7ff76;
-  width: 82%;
   height: 3px;
   left: 0px;
   border-color: #e2e871;
   -webkit-box-shadow: 0 0 3px 1px #e2e871;
           box-shadow: 0 0 3px 1px #e2e871;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4em  0em;
+}
+
+@media (max-width: 991px) {
+  .about {
+    display: block;
+  }
+  .about .mianimage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.about .mianimage, .about .aboutBox {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+}
+
+.about .mianimage .imgBorder {
+  padding: 15px;
+  background: #ffffff29;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.about .mianimage .imgBorder img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about .aboutBox {
+  padding: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 991px) {
+  .about .aboutBox {
+    padding: 30px 0px;
+    text-align: center;
+  }
 }
 
 .contact .title {
