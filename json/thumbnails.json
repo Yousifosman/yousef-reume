@@ -17,6 +17,10 @@
         {
             "imageLink" : "04.jpg",
             "description":"Here you should add a simple text to describe the image above"
+        },
+        {
+            "imageLink" : "code-2.png",
+            "description":"Here you should add a simple text to describe the image above"
         }
     ],
     "col_3" : [
