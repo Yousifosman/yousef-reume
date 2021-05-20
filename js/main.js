@@ -70,7 +70,7 @@ mainData.onload = function name() {
 	document.getElementById("aboutBox").innerHTML = `
 	<span> 
 		<span class="title">${myData.myName}</span> ${myData.mian_About} <br /> 
-		<a href="img/pdf/${myData.myCV}"><button class="btn"><i class="fa fa-download"></i> Download my CV</button></a>
+		<a href="img/pdf/${myData.myCV}" download><button class="btn"><i class="fa fa-download"></i> Download my CV</button></a>
 	</span>`;
 	// loop throu the Social media
 	document.getElementById("social_Media").innerHTML = myData.social_Media.map(loopsocial).join('')
